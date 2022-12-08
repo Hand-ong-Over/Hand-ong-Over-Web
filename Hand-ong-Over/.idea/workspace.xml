@@ -9,9 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="">
+    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="Dependencies setting">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71e788c4-26b1-4a57-bf6a-e22b3a1e26b1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71e788c4-26b1-4a57-bf6a-e22b3a1e26b1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hand-ong-Over.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hand-ong-Over.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,8 +176,16 @@
       <workItem from="1670516687143" duration="487000" />
       <workItem from="1670517242135" duration="33000" />
       <workItem from="1670517385204" duration="23000" />
-      <workItem from="1670517420549" duration="1493000" />
+      <workItem from="1670517420549" duration="4827000" />
     </task>
+    <task id="LOCAL-00001" summary="Dependencies setting">
+      <created>1670518938227</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670518938227</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +201,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dependencies setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dependencies setting" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
