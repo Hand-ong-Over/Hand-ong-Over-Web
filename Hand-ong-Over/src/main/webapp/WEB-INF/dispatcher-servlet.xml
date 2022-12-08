@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tool http://www.springframework.org/schema/tool/spring-tool.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <mvc:annotation-driven />
     <context:component-scan base-package="edu.handong.handongover" />
@@ -12,10 +12,10 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
-    <mvc:resources mapping="/resource/**" location="/resource/" />
-    <mvc:resources mapping="/img/**" location="/resource/img/" />
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+    <mvc:resources mapping="/img/**" location="/resources/img/" />
 
-    <bean id="LoginCheckInterceptor" class="edu.handong.handongover.user.LoginCheckerInterceptor" />
+    <bean id="loginCheckInterceptor" class="edu.handong.handongover.user.LoginCheckInterceptor" />
 
     <mvc:interceptors>
         <mvc:interceptor>
@@ -23,7 +23,7 @@
             <mvc:exclude-mapping path="/resource/**"/>
             <mvc:exclude-mapping path="/img/**"/>
             <mvc:exclude-mapping path="/login/**"/>
-            <ref bean="LoginCheckInterceptor"/>
+            <ref bean="loginCheckInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 </beans>
