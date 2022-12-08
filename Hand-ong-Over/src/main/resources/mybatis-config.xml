@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias type="edu.handong.handongover.board.FindPeopleVO" alias="findPeople" />
+        <typeAlias type="edu.handong.handongover.board.FindRoomVO" alias="findRoom" />
+        <typeAlias type="edu.handong.handongover.user.UserVO" alias="user" />
+    </typeAliases>
+</configuration>
