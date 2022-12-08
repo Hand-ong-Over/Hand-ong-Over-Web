@@ -10,11 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="Edit some settings">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +29,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -187,7 +190,7 @@
       <workItem from="1670517242135" duration="33000" />
       <workItem from="1670517385204" duration="23000" />
       <workItem from="1670517420549" duration="7138000" />
-      <workItem from="1670524908736" duration="1012000" />
+      <workItem from="1670524908736" duration="1953000" />
     </task>
     <task id="LOCAL-00001" summary="Dependencies setting">
       <created>1670518938227</created>
@@ -224,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670524507945</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Edit some maven settings">
+      <created>1670526142663</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670526142663</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +257,8 @@
     <MESSAGE value="Basic Setting for datasource, myBatis, resources, LoginCheckInterceptor" />
     <MESSAGE value="Create Java Backend files" />
     <MESSAGE value="Edit some settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit some settings" />
+    <MESSAGE value="Edit some maven settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit some maven settings" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
