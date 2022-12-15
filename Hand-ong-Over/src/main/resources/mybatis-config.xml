@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <typeAlias type="edu.handong.handongover.board.FindPeopleVO" alias="findPeople" />
+        <typeAlias type="edu.handong.handongover.board.FindPersonVO" alias="findPerson" />
         <typeAlias type="edu.handong.handongover.board.FindRoomVO" alias="findRoom" />
         <typeAlias type="edu.handong.handongover.user.UserVO" alias="user" />
     </typeAliases>
