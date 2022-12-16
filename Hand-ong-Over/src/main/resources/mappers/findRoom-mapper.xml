@@ -1,3 +1,47 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="FindRoom">
+    <insert id="insertFindRoom">
+        <![CDATA[
+            INSERT INTO FindRoom (
+                writer, title, start_date, end_date,
+                room_type, price, num_of_people,
+                sex, smoke, alcohol, pet, additional_info
+            )
+            VALUES (
+                #{writer}, #{title}, #{start_date}, #{end_date},
+                #{room_type}, #{price}, #{num_of_people},
+                #{sex}, #{smoke}, #{alcohol}, #{pet}, #{additional_info}
+            )
+        ]]>
+    </insert>
+    <delete id="deleteFindRoom">
+        <![CDATA[
+            DELETE FROM FindRoom
+            WHERE article_id = #{seq}
+        ]]>
+    </delete>
+    <update id="updateFindRoom">
+        <![CDATA[
+            UPDATE FindRoom
+            SET
+                writer = #{writer}, title = #{title}, start_date = #{start_date}, end_date = #{end_date},
+                room_type = #{room_type}, price = #{price}, num_of_people = #{num_of_people},
+                sex = #{sex}, smoke = #{smoke}, alcohol = #{alcohol}, pet = #{pet}, additional_info = #{additional_info}
+            WHERE article_id = #{seq}
+        ]]>
+    </update>
+    <select id="getFindRoom" resultType="findRoom">
+        <![CDATA[
+            SELECT *
+            FROM FindRoom
+            WHERE article_id = #{seq}
+        ]]>
+    </select>
+    <select id="getFindRoomList" resultType="findRoom">
+        <![CDATA[
+            SELECT *
+            FROM FindRoom
+            ORDER BY article_id DESC
+        ]]>
+    </select>
 </mapper>
