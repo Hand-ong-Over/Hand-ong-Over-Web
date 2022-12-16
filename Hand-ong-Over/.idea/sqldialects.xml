@@ -2,5 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/71e788c4-26b1-4a57-bf6a-e22b3a1e26b1/console_1.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mappers/findPerson-mapper.xml" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mappers/findRoom-mapper.xml" dialect="GenericSQL" />
   </component>
 </project>

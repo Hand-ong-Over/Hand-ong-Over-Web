@@ -9,17 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="delete trash files">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71e788c4-26b1-4a57-bf6a-e22b3a1e26b1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71e788c4-26b1-4a57-bf6a-e22b3a1e26b1.xml" afterDir="false" />
+    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="findPerson mapper">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPeopleDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPeopleVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/findPeople-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/findPerson-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/findRoom-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/findRoom-mapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,33 +56,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/coding/2022-2/PP1/2022-2-PP1-Project5&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8d67f457fd1167f19fe0f5abb2137113&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "D:/coding/2022-2/PP1/2022-2-PP1-Project5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "8d67f457fd1167f19fe0f5abb2137113",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;mariadb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mariadb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\coding\2022-2\PP1\Hand-ong-Over-Web\Hand-ong-Over\src\main\webapp\WEB-INF" />
@@ -203,7 +197,7 @@
       <workItem from="1670573382336" duration="719000" />
       <workItem from="1670574158353" duration="3030000" />
       <workItem from="1670997350355" duration="571000" />
-      <workItem from="1671147758310" duration="401000" />
+      <workItem from="1671147758310" duration="1874000" />
     </task>
     <task id="LOCAL-00001" summary="Dependencies setting">
       <created>1670518938227</created>
@@ -247,7 +241,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670526142663</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fix name (people -&gt; person)">
+      <created>1671148196312</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671148196312</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fix name (people -&gt; person)">
+      <created>1671148850726</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671148850726</updated>
+    </task>
+    <task id="LOCAL-00009" summary="findPerson mapper">
+      <created>1671148870600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671148870600</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +286,9 @@
     <MESSAGE value="Create Java Backend files" />
     <MESSAGE value="Edit some settings" />
     <MESSAGE value="Edit some maven settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit some maven settings" />
+    <MESSAGE value="Fix name (people -&gt; person)" />
+    <MESSAGE value="findPerson mapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="findPerson mapper" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
