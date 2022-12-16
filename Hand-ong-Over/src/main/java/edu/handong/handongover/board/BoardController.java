@@ -28,6 +28,13 @@ public class BoardController {
         return "listfindperson";
     }
 
+    @RequestMapping(value = "/findperson/{id}", method= RequestMethod.GET)
+    public String findPersonDetail(@PathVariable int id, Model model, HttpSession session) {
+        model.addAttribute("findPerson", boardService.getFindPerson(id));
+        model.addAttribute("user", session.getAttribute("login"));
+        return "detailfindperson";
+    }
+
     @RequestMapping(value = "/findperson/add", method= RequestMethod.GET)
     public String addFindPerson() {
         return "addfindperson";
@@ -76,6 +83,13 @@ public class BoardController {
         model.addAttribute("findRoomList", boardService.getFindRoomList());
         model.addAttribute("user", session.getAttribute("login"));
         return "listfindroom";
+    }
+
+    @RequestMapping(value = "/findroom/{id}", method= RequestMethod.GET)
+    public String findRoomDetail(@PathVariable int id, Model model, HttpSession session) {
+        model.addAttribute("findRoom", boardService.getFindRoom(id));
+        model.addAttribute("user", session.getAttribute("login"));
+        return "detailfindroom";
     }
 
     @RequestMapping(value = "/findroom/add", method= RequestMethod.GET)

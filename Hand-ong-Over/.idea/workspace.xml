@@ -9,21 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="Delete un-used file">
+    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="Fix mvc annotation-driven Error">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detailfindperson.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detailfindroom.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/LoginCheckInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/LoginCheckInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/classes/mappers/findPeople-mapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/classes/mappers/findRoom-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/classes/mappers/findRoom-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/classes/mappers/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/classes/mappers/user-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Hand-ong-Over/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Hand-ong-Over/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/findPeople-mapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/findRoom-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/findRoom-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/user-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/BoardController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +197,9 @@
       <workItem from="1670574158353" duration="3030000" />
       <workItem from="1670997350355" duration="571000" />
       <workItem from="1671147758310" duration="6280000" />
-      <workItem from="1671154138447" duration="2296000" />
+      <workItem from="1671154138447" duration="2626000" />
+      <workItem from="1671205718242" duration="84000" />
+      <workItem from="1671206681595" duration="445000" />
     </task>
     <task id="LOCAL-00001" summary="Dependencies setting">
       <created>1670518938227</created>
@@ -370,7 +362,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671152540119</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Edit Login">
+      <created>1671156580511</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1671156580511</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fix mvc annotation-driven Error">
+      <created>1671156621525</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1671156621525</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +416,9 @@
     <MESSAGE value="create login.jsp" />
     <MESSAGE value="HomeController" />
     <MESSAGE value="Delete un-used file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete un-used file" />
+    <MESSAGE value="Edit Login" />
+    <MESSAGE value="Fix mvc annotation-driven Error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix mvc annotation-driven Error" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
