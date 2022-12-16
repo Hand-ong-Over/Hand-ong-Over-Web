@@ -1,3 +1,53 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="FindPerson">
+    <insert id="insertFindPerson">
+        <![CDATA[
+            INSERT INTO FindPerson (
+                writer, title, start_date, end_date,
+                room_type, room_size, address,
+                location_latitude, location_longitude,
+                location_info, price, images, additional_info,
+                num_of_people, sex, smoke, alcohol, pet
+            )
+            VALUES (
+                #{writer}, #{title}, #{start_date}, #{end_date},
+                #{room_type}, #{room_size}, #{address},
+                #{location_latitude}, #{location_longitude},
+                #{location_info}, #{price}, #{images}, #{additional_info},
+                #{num_of_people}, #{sex}, #{smoke}, #{alcohol}, #{pet}
+            );
+        ]]>
+    </insert>
+    <delete id="deleteFindPerson">
+        <![CDATA[
+            DELETE FROM FindPerson
+            WHERE article_id = #{seq}
+        ]]>
+    </delete>
+    <update id="updateFindPerson">
+        <![CDATA[
+            UPDATE FindPerson
+            SET
+                writer = #{writer}, title = #{title}, start_date = #{start_date}, end_date = #{end_date},
+                room_type = #{room_type}, room_size = #{room_size}, address = #{address},
+                location_latitude = #{location_latitude}, location_longitude = #{location_longitude},
+                location_info = #{location_info}, price = #{price}, images = #{images}, additional_info = #{additional_info},
+                num_of_people = #{num_of_people}, sex = #{sex}, smoke = #{smoke}, alcohol = #{alcohol}, pet = #{pet}
+            WHERE article_id = #{seq}
+        ]]>
+    </update>
+    <select id="getFindPerson" resultType="findPerson">
+        <![CDATA[
+            SELECT *
+            FROM FindPerson
+            WHERE article_id = #{seq}
+        ]]>
+    </select>
+    <select id="getFindPersonList" resultType="findPerson">
+        <![CDATA[
+            SELECT *
+            FROM FindPerson
+            ORDER BY article_id DESC
+        ]]>
+    </select>
 </mapper>
