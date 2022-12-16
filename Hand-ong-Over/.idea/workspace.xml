@@ -9,12 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="findPerson mapper">
+    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="Implement BoardController and create jsp files">
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/findRoom-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/findRoom-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +199,7 @@
       <workItem from="1670573382336" duration="719000" />
       <workItem from="1670574158353" duration="3030000" />
       <workItem from="1670997350355" duration="571000" />
-      <workItem from="1671147758310" duration="1874000" />
+      <workItem from="1671147758310" duration="3940000" />
     </task>
     <task id="LOCAL-00001" summary="Dependencies setting">
       <created>1670518938227</created>
@@ -262,7 +264,49 @@
       <option name="project" value="LOCAL" />
       <updated>1671148870600</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="FindRoom VO and DAO">
+      <created>1671149667907</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671149667907</updated>
+    </task>
+    <task id="LOCAL-00011" summary="FindRoom mapper">
+      <created>1671149679925</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671149679925</updated>
+    </task>
+    <task id="LOCAL-00012" summary="SQL Language Config">
+      <created>1671149693692</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671149693692</updated>
+    </task>
+    <task id="LOCAL-00013" summary="BoardService">
+      <created>1671149910683</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1671149910683</updated>
+    </task>
+    <task id="LOCAL-00014" summary="BoardServiceImpl">
+      <created>1671149919949</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671149919949</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Implement BoardController and create jsp files">
+      <created>1671151095298</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671151095298</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +332,13 @@
     <MESSAGE value="Edit some maven settings" />
     <MESSAGE value="Fix name (people -&gt; person)" />
     <MESSAGE value="findPerson mapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="findPerson mapper" />
+    <MESSAGE value="FindRoom VO and DAO" />
+    <MESSAGE value="FindRoom mapper" />
+    <MESSAGE value="SQL Language Config" />
+    <MESSAGE value="BoardService" />
+    <MESSAGE value="BoardServiceImpl" />
+    <MESSAGE value="Implement BoardController and create jsp files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement BoardController and create jsp files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
