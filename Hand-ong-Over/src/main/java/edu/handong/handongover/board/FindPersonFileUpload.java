@@ -13,7 +13,7 @@ public class FindPersonFileUpload {
     public FindPersonVO one;
 
     FindPersonFileUpload() {
-        one = null;
+        one = new FindPersonVO();
     }
     FindPersonFileUpload (FindPersonVO vo) {
         one = vo;
