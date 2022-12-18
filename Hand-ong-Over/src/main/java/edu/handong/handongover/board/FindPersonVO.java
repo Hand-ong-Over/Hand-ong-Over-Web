@@ -1,10 +1,10 @@
 package edu.handong.handongover.board;
 
 import java.time.LocalDateTime;
-import java.util.Date;
+import java.sql.Date;
 
 public class FindPersonVO {
-    private int seq;
+    private int article_id;
     private String writer;
     private String title;
     private Date start_date;
@@ -25,12 +25,12 @@ public class FindPersonVO {
     private int alcohol;
     private LocalDateTime reg_date;
 
-    public int getSeq() {
-        return seq;
+    public int getArticle_id() {
+        return article_id;
     }
 
-    public void setSeq(int seq) {
-        this.seq = seq;
+    public void setArticle_id(int article_id) {
+        this.article_id = article_id;
     }
 
     public String getWriter() {

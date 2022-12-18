@@ -17,7 +17,7 @@
     <form method="post"action="loginOk">
         <h1>Hand-ong Over</h1>
         <br><div><label>User ID :</label><input type="text" name="userid" /></div>
-        <br><div><label>Password :</label><input type="password" name="password" /></div>
+        <br><div><label>Password :</label><input type="password" name="userpw" /></div>
         <br><button type="submit" class="btn btn-outline-secondary">Login</button>
     </form>
 </div>

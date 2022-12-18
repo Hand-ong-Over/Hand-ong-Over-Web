@@ -20,16 +20,16 @@ public class BoardServiceImpl implements BoardService {
         return findPersonDAO.insertFindPerson(vo);
     }
     @Override
-    public int deleteFindPerson(int seq) {
-        return findPersonDAO.deleteFindPerson(seq);
+    public int deleteFindPerson(int article_id) {
+        return findPersonDAO.deleteFindPerson(article_id);
     }
     @Override
     public int updateFindPerson(FindPersonVO vo) {
         return findPersonDAO.updateFindPerson(vo);
     }
     @Override
-    public FindPersonVO getFindPerson(int seq) {
-        return findPersonDAO.getFindPerson(seq);
+    public FindPersonVO getFindPerson(int article_id) {
+        return findPersonDAO.getFindPerson(article_id);
     }
     @Override
     public List<FindPersonVO> getFindPersonList() {

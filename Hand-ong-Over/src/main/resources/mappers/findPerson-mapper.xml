@@ -21,7 +21,7 @@
     <delete id="deleteFindPerson">
         <![CDATA[
             DELETE FROM FindPerson
-            WHERE article_id = #{seq}
+            WHERE article_id = #{article_id}
         ]]>
     </delete>
     <update id="updateFindPerson">
@@ -33,14 +33,14 @@
                 location_latitude = #{location_latitude}, location_longitude = #{location_longitude},
                 location_info = #{location_info}, price = #{price}, images = #{images}, additional_info = #{additional_info},
                 num_of_people = #{num_of_people}, sex = #{sex}, smoke = #{smoke}, alcohol = #{alcohol}, pet = #{pet}
-            WHERE article_id = #{seq}
+            WHERE article_id = #{article_id}
         ]]>
     </update>
     <select id="getFindPerson" resultType="findPerson">
         <![CDATA[
             SELECT *
             FROM FindPerson
-            WHERE article_id = #{seq}
+            WHERE article_id = #{article_id}
         ]]>
     </select>
     <select id="getFindPersonList" resultType="findPerson">

@@ -6,7 +6,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller
@@ -36,12 +38,20 @@ public class BoardController {
     }
 
     @RequestMapping(value = "/findperson/add", method= RequestMethod.GET)
-    public String addFindPerson() {
+    public String addFindPerson(Model model, HttpSession session) {
+        model.addAttribute("user", session.getAttribute("login"));
         return "addfindperson";
     }
 
     @RequestMapping(value = "/findperson/addok", method= RequestMethod.POST)
-    public String addFindPersonOk(FindPersonVO vo) {
+    public String addFindPersonOk(HttpServletRequest request) {
+        FindPersonFileUpload fileUpload = new FindPersonFileUpload();
+        FindPersonVO vo = fileUpload.uploadPhoto(request);
+
+        System.out.println(vo.getWriter());
+        System.out.println(vo.getTitle());
+        System.out.println(vo.getImages());
+
         if (boardService.insertFindPerson(vo) == 0) {
             System.out.println("데이터 추가 실패");
         } else {

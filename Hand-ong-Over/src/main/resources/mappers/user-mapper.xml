@@ -21,7 +21,7 @@
     </update>
     <delete id="deleteUser">
         <![CDATA[
-            DELETE FROM BoardUser
+            DELETE FROM User
             WHERE userid = #{userid}
         ]]>
     </delete>

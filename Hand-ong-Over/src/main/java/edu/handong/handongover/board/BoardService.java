@@ -5,8 +5,8 @@ import java.util.List;
 public interface BoardService {
     public int insertFindPerson(FindPersonVO vo);
     public int updateFindPerson(FindPersonVO vo);
-    public int deleteFindPerson(int seq);
-    public FindPersonVO getFindPerson(int seq);
+    public int deleteFindPerson(int article_id);
+    public FindPersonVO getFindPerson(int article_id);
     public List<FindPersonVO> getFindPersonList();
     public int insertFindRoom(FindRoomVO vo);
     public int updateFindRoom(FindRoomVO vo);

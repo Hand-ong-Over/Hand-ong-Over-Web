@@ -4,7 +4,10 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 @Repository
 public class FindPersonDAO {
@@ -14,14 +17,14 @@ public class FindPersonDAO {
     public int insertFindPerson(FindPersonVO vo) {
         return sqlSession.insert("FindPerson.insertFindPerson", vo);
     }
-    public int deleteFindPerson(int seq) {
-        return sqlSession.delete("FindPerson.deleteFindPerson", seq);
+    public int deleteFindPerson(int article_id) {
+        return sqlSession.delete("FindPerson.deleteFindPerson", article_id);
     }
     public int updateFindPerson(FindPersonVO vo) {
         return sqlSession.update("FindPerson.updateFindPerson", vo);
     }
-    public FindPersonVO getFindPerson(int seq) {
-        return sqlSession.selectOne("FindPerson.getFindPerson", seq);
+    public FindPersonVO getFindPerson(int article_id) {
+        return sqlSession.selectOne("FindPerson.getFindPerson", article_id);
     }
     public List<FindPersonVO> getFindPersonList() {
         return sqlSession.selectList("FindPerson.getFindPersonList");

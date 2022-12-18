@@ -10,15 +10,15 @@ public class UserDAO {
     SqlSessionTemplate sqlSession;
 
     public UserVO getUser(UserVO vo) {
-        return sqlSession.selectOne("user.getUser", vo);
+        return sqlSession.selectOne("User.getUser", vo);
     }
     public int insertUser(UserVO vo) {
-        return sqlSession.insert("user.insertUser", vo);
+        return sqlSession.insert("User.insertUser", vo);
     }
     public int updateUser(UserVO vo) {
-        return sqlSession.update("user.updateUser", vo);
+        return sqlSession.update("User.updateUser", vo);
     }
     public int deleteUser(UserVO vo) {
-        return sqlSession.delete("user.deleteUser", vo);
+        return sqlSession.delete("User.deleteUser", vo);
     }
 }
