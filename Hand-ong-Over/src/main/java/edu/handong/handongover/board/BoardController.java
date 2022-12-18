@@ -48,10 +48,6 @@ public class BoardController {
         FindPersonFileUpload fileUpload = new FindPersonFileUpload();
         FindPersonVO vo = fileUpload.uploadPhoto(request);
 
-        System.out.println(vo.getWriter());
-        System.out.println(vo.getTitle());
-        System.out.println(vo.getImages());
-
         if (boardService.insertFindPerson(vo) == 0) {
             System.out.println("데이터 추가 실패");
         } else {
@@ -63,12 +59,17 @@ public class BoardController {
     @RequestMapping(value = "/findperson/editform/{id}", method= RequestMethod.GET)
     public String editFindPerson(@PathVariable("id") int id, Model model) {
         FindPersonVO findPersonVO = boardService.getFindPerson(id);
+        FindPersonFileUpload fileUpload = new FindPersonFileUpload(findPersonVO);
+        model.addAttribute("fileUpload", fileUpload);
         model.addAttribute("findPersonVO", findPersonVO);
         return "editfindperson";
     }
 
     @RequestMapping(value = "/findperson/editok", method= RequestMethod.POST)
-    public String editFindPersonOk(FindPersonVO vo) {
+    public String editFindPersonOk(HttpServletRequest request) {
+        FindPersonFileUpload fileUpload = new FindPersonFileUpload();
+        FindPersonVO vo = fileUpload.uploadPhoto(request);
+
         if (boardService.updateFindPerson(vo) == 0) {
             System.out.println("데이터 수정 실패");
         } else {

@@ -11,7 +11,7 @@
 <header>
     <div class="navbar shadow-sm" style="background-color: dodgerblue">
         <div class="container">
-            <a href="/" class="navbar-brand d-flex align-items-center">
+            <a href="${pageContext.request.contextPath}" class="navbar-brand d-flex align-items-center">
                 <strong style="color: white">Hand-ong Over</strong>
             </a>
         </div>
@@ -94,7 +94,7 @@
             </c:choose>
         </label>
 
-        <br><br><label for="AY" class="form-label" style="width: 223px">음주여부</label>
+        <br><br><label class="form-label" style="width: 223px">음주여부</label>
         <br><label class="form-label">
             <c:choose>
                 <c:when test="${findPerson.alcohol eq 1}">
@@ -106,7 +106,7 @@
             </c:choose>
         </label>
 
-        <br><br><label for="PY" class="form-label" style="width: 223px">애완동물 여부</label>
+        <br><br><label class="form-label" style="width: 223px">애완동물 여부</label>
         <br><label class="form-label">
             <c:choose>
                 <c:when test="${findPerson.pet eq 1}">

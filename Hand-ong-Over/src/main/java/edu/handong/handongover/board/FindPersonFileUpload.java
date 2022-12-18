@@ -10,6 +10,14 @@ import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
 public class FindPersonFileUpload {
+    public FindPersonVO one;
+
+    FindPersonFileUpload() {
+        one = null;
+    }
+    FindPersonFileUpload (FindPersonVO vo) {
+        one = vo;
+    }
     public FindPersonVO uploadPhoto(HttpServletRequest request) {
         String filenames = "";
         List<String> filenameList = new ArrayList<>();
@@ -21,7 +29,6 @@ public class FindPersonFileUpload {
         File dir = new File(savePath);
         if (!dir.exists()) dir.mkdirs();
 
-        FindPersonVO one = null;
         MultipartRequest multipartRequest = null;
         try {
             multipartRequest = new MultipartRequest(request, savePath, sizeLimit, "utf-8", new DefaultFileRenamePolicy());
@@ -36,7 +43,6 @@ public class FindPersonFileUpload {
                 }
             }
 
-            one = new FindPersonVO();
             String article_id = multipartRequest.getParameter("article_id");
             if (article_id != null && !article_id.equals(""))
                 one.setArticle_id(Integer.parseInt(article_id));
@@ -102,5 +108,9 @@ public class FindPersonFileUpload {
             File f = new File(savePath + "/" + file);
             if (f.exists()) f.delete();
         }
+    }
+
+    public FindPersonVO getOne() {
+        return one;
     }
 }

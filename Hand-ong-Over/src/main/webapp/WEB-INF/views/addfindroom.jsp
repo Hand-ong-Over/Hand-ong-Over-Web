@@ -21,7 +21,7 @@
 <header>
     <div class="navbar shadow-sm" style="background-color: dodgerblue">
         <div class="container">
-            <a href="listfindroom.jsp" class="navbar-brand d-flex align-items-center">
+            <a href="${pageContext.request.contextPath}" class="navbar-brand d-flex align-items-center">
                 <strong style="color: white">Hand-ong Over</strong>
             </a>
         </div>
