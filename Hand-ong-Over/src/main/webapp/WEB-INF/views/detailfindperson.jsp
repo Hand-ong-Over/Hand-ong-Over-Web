@@ -29,10 +29,10 @@
         <br><label class="form-label">제목</label>
         <br><label class="form-label"> - ${findPerson.title}</label>
 
-        <br><label class="form-label">작성자</label>
+        <br></bt><br><label class="form-label">작성자</label>
         <br><label class="form-label"> - ${findPerson.writer}</label>
 
-        <br><div id="files" style="margin-top: 10px">
+        <br><br><div id="files" style="margin-top: 10px">
         <p class="form-label">방 사진</p>
         <div>
             <c:choose>
@@ -49,19 +49,19 @@
         </div>
         </div>
 
-        <br><br><label class="form-label">주소</label>
+        <br><label class="form-label">주소</label>
         <br><label class="form-label"> - ${findPerson.address}</label>
 
         <br><br><label class="form-label">위치 안내</label>
         <br><label class="form-label"> - ${findPerson.location_info}</label>
 
-        <br><br><label class="form-label" style="width: 223px">방 유형</label>
+        <br><br><label class="form-label" style="width: 225px">방 유형</label>
         <label class="form-label">방 크기</label>
-        <br><label class="form-label" style="width: 140px;"> - ${findPerson.room_type}</label>
-        <label class="form-label" style="width: 226px;"> - ${findPerson.room_size}</label>
+        <br><label class="form-label" style="width: 225px;"> - ${findPerson.room_type}</label>
+        <label class="form-label"> - ${findPerson.room_size}</label>
 
         <br><br><label class="form-label">월세</label>
-        <br><label class="form-label" style="width: 90px;"> - ${findPerson.price}</label>
+        <br><label class="form-label" style="width: 50px;"> - ${findPerson.price}</label>
         <label class="form-label">만원</label>
 
         <br><br><label class="form-label" style="width: 223px">성별</label>
@@ -75,7 +75,7 @@
             </c:otherwise>
         </c:choose>
         </label>
-        
+
         <br><br><label class="form-label">인원</label>
         <br><label class="form-label"> - ${findPerson.num_of_people}</label>
 
