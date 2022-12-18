@@ -69,6 +69,7 @@
             <p>
                 <a href="https://github.com/Hand-ong-Over/Hand-ong-Over-Web.git" target="_blank" class="btn btn-outline-primary my-2">github repository 이동</a>
                 <a href="findperson/add" class="btn btn-outline-secondary my-2">글 추가하기</a>
+                <button type="button" class="btn btn-warning" onclick="location.href='../login/logout'">로그아웃</button>
             </p>
         </div>
     </div>

@@ -9,31 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="Add detail view pages">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonFileUpload.java" afterDir="false" />
+    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="a lot of changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/BoardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/findPerson-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/findPerson-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/Hand-ong Over" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addfindperson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addfindperson.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detailfindperson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detailfindperson.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editfindperson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editfindperson.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listfindperson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listfindperson.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +203,8 @@
       <workItem from="1671206681595" duration="1074000" />
       <workItem from="1671269825304" duration="20378000" />
       <workItem from="1671302399037" duration="4621000" />
-      <workItem from="1671307455601" duration="19102000" />
+      <workItem from="1671307455601" duration="19370000" />
+      <workItem from="1671337434191" duration="464000" />
     </task>
     <task id="LOCAL-00001" summary="Dependencies setting">
       <created>1670518938227</created>
@@ -407,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671207153504</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="a lot of changes">
+      <created>1671326804115</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1671326804115</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +413,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dependencies setting" />
     <MESSAGE value="DataSource Setting" />
     <MESSAGE value="Basic Setting for datasource, myBatis, resources, LoginCheckInterceptor" />
     <MESSAGE value="Create Java Backend files" />
@@ -450,7 +437,8 @@
     <MESSAGE value="Edit Login" />
     <MESSAGE value="Fix mvc annotation-driven Error" />
     <MESSAGE value="Add detail view pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add detail view pages" />
+    <MESSAGE value="a lot of changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="a lot of changes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -30,7 +30,7 @@
 </section>
 <div align="left" style="margin-left: 500px; margin-right: 500px">
     <form action="addok" enctype="multipart/form-data" method="post">
-        <input type="hidden" id="writer" name="writer" value="admin">
+        <input type="hidden" id="writer" name="writer" value="${user.userid}">
 
         <br><label for="title" class="form-label">제목</label>
         <br><input type="text" id="title" name="title"/>
