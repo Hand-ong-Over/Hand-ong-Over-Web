@@ -3,68 +3,128 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-  <title>Title</title>
+    <title>Add Post for find Person</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-  <h1>제목: ${findPerson.title}</h1>
-  <p>작성자: ${findPerson.writer}</p>
-  <p>시작 일자: ${findPerson.start_date}</p>
-  <p>종료 일자: ${findPerson.end_date}</p>
-  <p>방 종류: ${findPerson.room_type}</p>
-  <p>방 크기: ${findPerson.room_size}</p>
-  <p>주소: ${findPerson.address}</p>
-  <p>위치 정보: ${findPerson.location_info}</p>
-  <p>월세: ${findPerson.price}</p>
-  <div>
-    <c:choose>
-      <c:when test="${findPerson.images == null}">
-        <img src="https://via.placeholder.com/225.png?text=No+Image" alt="No Image" width="100%" height="225">
-      </c:when>
-      <c:otherwise>
-        <c:set var="images" value="${findPerson.images.split(';')}"/>
-        <c:forEach var="image" items="${images}">
-          <img src="${pageContext.request.contextPath}/resources/upload/${image}" alt="" width="100%" height="225">
-        </c:forEach>
-      </c:otherwise>
-    </c:choose>
-  </div>
-  <p>인원: ${findPerson.num_of_people}</p>
-  <p>성별:
-    <c:choose>
-      <c:when test="${findPerson.sex eq 1}">
-        남자
-      </c:when>
-      <c:otherwise>
-        여자
-      </c:otherwise>
-    </c:choose></p>
-  <p>흡연 여부:
-    <c:choose>
-      <c:when test="${findPerson.smoke eq 1}">
-        예
-      </c:when>
-      <c:otherwise>
-        아니오
-      </c:otherwise>
-    </c:choose></p>
-  <p>음주 여부:
-    <c:choose>
-      <c:when test="${findPerson.alcohol eq 1}">
-        예
-      </c:when>
-      <c:otherwise>
-        아니오
-      </c:otherwise>
-    </c:choose></p>
-  <p>애완동물 여부:
-    <c:choose>
-      <c:when test="${findPerson.pet eq 1}">
-        예
-      </c:when>
-      <c:otherwise>
-        아니오
-      </c:otherwise>
-    </c:choose></p>
-  <p>추가 정보: ${findPerson.additional_info}</p>
+<header>
+    <div class="navbar shadow-sm" style="background-color: dodgerblue">
+        <div class="container">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <strong style="color: white">Hand-ong Over</strong>
+            </a>
+        </div>
+    </div>
+</header>
+<section class="text-center container" style="margin-top: 30px">
+    <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light" style="font-weight: bold">상세 보기</h1>
+    </div>
+</section>
+<div align="left" style="margin-left: 500px; margin-right: 500px">
+    <form action="addok" enctype="multipart/form-data" method="post">
+        <input type="hidden" id="writer" name="writer" value="${user.userid}">
+
+        <br><label class="form-label">제목</label>
+        <br><label class="form-label"> - ${findPerson.title}</label>
+
+        <br><label class="form-label">작성자</label>
+        <br><label class="form-label"> - ${findPerson.writer}</label>
+
+        <br><div id="files" style="margin-top: 10px">
+        <p class="form-label">방 사진</p>
+        <div>
+            <c:choose>
+                <c:when test="${findPerson.images == null}">
+                    <img src="https://via.placeholder.com/225.png?text=No+Image" alt="No Image" width="100%" height="225">
+                </c:when>
+                <c:otherwise>
+                    <c:set var="images" value="${findPerson.images.split(';')}"/>
+                    <c:forEach var="image" items="${images}">
+                        <img src="${pageContext.request.contextPath}/resources/upload/${image}" alt="" width="100%" height="225">
+                    </c:forEach>
+                </c:otherwise>
+            </c:choose>
+        </div>
+        </div>
+
+        <br><br><label class="form-label">주소</label>
+        <br><label class="form-label"> - ${findPerson.address}</label>
+
+        <br><br><label class="form-label">위치 안내</label>
+        <br><label class="form-label"> - ${findPerson.location_info}</label>
+
+        <br><br><label class="form-label" style="width: 223px">방 유형</label>
+        <label class="form-label">방 크기</label>
+        <br><label class="form-label" style="width: 140px;"> - ${findPerson.room_type}</label>
+        <label class="form-label" style="width: 226px;"> - ${findPerson.room_size}</label>
+
+        <br><br><label class="form-label">월세</label>
+        <br><label class="form-label" style="width: 90px;"> - ${findPerson.price}</label>
+        <label class="form-label">만원</label>
+
+        <br><br><label class="form-label" style="width: 223px">성별</label>
+        <br><label class="form-label">
+        <c:choose>
+            <c:when test="${findPerson.sex eq 1}">
+                - 남자
+            </c:when>
+            <c:otherwise>
+                - 여자
+            </c:otherwise>
+        </c:choose>
+        </label>
+        
+        <br><br><label class="form-label">인원</label>
+        <br><label class="form-label"> - ${findPerson.num_of_people}</label>
+
+        <br><br><label class="form-label">기간</label>
+        <br><label class="form-label"> - ${findPerson.start_date} ~ ${findPerson.end_date}</label>
+
+        <br><br><label class="form-label" style="width: 223px">흡연여부</label>
+        <br><label class="form-label">
+            <c:choose>
+                <c:when test="${findPerson.smoke eq 1}">
+                    예
+                </c:when>
+                <c:otherwise>
+                    아니오
+                </c:otherwise>
+            </c:choose>
+        </label>
+
+        <br><br><label for="AY" class="form-label" style="width: 223px">음주여부</label>
+        <br><label class="form-label">
+            <c:choose>
+                <c:when test="${findPerson.alcohol eq 1}">
+                    예
+                </c:when>
+                <c:otherwise>
+                    아니오
+                </c:otherwise>
+            </c:choose>
+        </label>
+
+        <br><br><label for="PY" class="form-label" style="width: 223px">애완동물 여부</label>
+        <br><label class="form-label">
+            <c:choose>
+                <c:when test="${findPerson.pet eq 1}">
+                    예
+                </c:when>
+                <c:otherwise>
+                    아니오
+                </c:otherwise>
+            </c:choose>
+        </label>
+
+        <br><br><label class="form-label">기타사항</label>
+        <br><label class="form-label"> - ${findPerson.additional_info}</label>
+        <br><br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-outline-secondary" type="button"><a href="" style="text-decoration: none; color: gray">확인</a></button>
+        </div>
+    </form>
+</div>
 </body>
 </html>
