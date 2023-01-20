@@ -9,14 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="Improve Photo Upload feature">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindRoomServiceImpl.java" afterDir="false" />
+    <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="Refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detailfindperson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detailfindperson.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listfindperson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listfindperson.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +225,7 @@
       <workItem from="1673628107432" duration="2449000" />
       <workItem from="1673702173916" duration="8279000" />
       <workItem from="1673784196482" duration="6000" />
-      <workItem from="1674201047262" duration="4157000" />
+      <workItem from="1674201047262" duration="5805000" />
     </task>
     <task id="LOCAL-00001" summary="Dependencies setting">
       <created>1670518938227</created>
@@ -447,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674207099876</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Refactoring">
+      <created>1674208374738</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1674208374738</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +469,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create Java Backend files" />
     <MESSAGE value="Edit some settings" />
     <MESSAGE value="Edit some maven settings" />
     <MESSAGE value="Fix name (people -&gt; person)" />
@@ -490,7 +493,8 @@
     <MESSAGE value="a lot of changes" />
     <MESSAGE value="Fix some error" />
     <MESSAGE value="Improve Photo Upload feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve Photo Upload feature" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

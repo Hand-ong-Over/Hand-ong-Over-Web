@@ -122,7 +122,7 @@
         <br><label class="form-label"> - ${findPerson.additional_info}</label>
         <br><br>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-outline-secondary" type="button"><a href="" style="text-decoration: none; color: gray">확인</a></button>
+            <button class="btn btn-outline-secondary" type="button"><a href="/findperson" style="text-decoration: none; color: gray">확인</a></button>
         </div>
     </form>
 </div>

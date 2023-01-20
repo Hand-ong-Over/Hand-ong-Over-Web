@@ -1,5 +1,6 @@
 package edu.handong.handongover.board;
 
+import edu.handong.handongover.user.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -52,21 +53,28 @@ public class FindPersonController {
     }
 
     @RequestMapping(value = "/findperson/editform/{id}", method= RequestMethod.GET)
-    public String editFindPerson(@PathVariable("id") int id, Model model) {
-        FindPersonVO findPersonVO = findPersonService.getFindPerson(id);
-        FindPersonFileUpload fileUpload = new FindPersonFileUpload(findPersonVO);
-        model.addAttribute("fileUpload", fileUpload);
-        model.addAttribute("findPersonVO", findPersonVO);
-        return "editfindperson";
+    public String editFindPerson(@PathVariable("id") int id, Model model, HttpSession session) {
+        String loginUserid = ((UserVO) session.getAttribute("login")).getUserid();
+        FindPersonVO vo = findPersonService.getFindPerson(id);
+
+        if (loginUserid.equals(vo.getWriter())) {
+            FindPersonFileUpload fileUpload = new FindPersonFileUpload(vo);
+            model.addAttribute("fileUpload", fileUpload);
+            model.addAttribute("findPersonVO", vo);
+            return "editfindperson";
+        } else {
+            return "redirect:/findperson";
+        }
     }
 
     @RequestMapping(value = "/findperson/editok", method= RequestMethod.POST)
-    public String editFindPersonOk(HttpServletRequest request) {
+    public String editFindPersonOk(HttpServletRequest request, HttpSession session) {
         FindPersonFileUpload fileUpload = new FindPersonFileUpload();
         FindPersonVO vo = fileUpload.uploadPhoto(request);
 
-        if (findPersonService.updateFindPerson(vo) == 0) {
-            System.out.println("데이터 수정 실패");
+        String loginUserid = ((UserVO) session.getAttribute("login")).getUserid();
+        if (loginUserid.equals(vo.getWriter()) && findPersonService.updateFindPerson(vo) == 0) {
+                System.out.println("데이터 수정 실패");
         } else {
             System.out.println("데이터 수정 성공");
         }
@@ -74,8 +82,11 @@ public class FindPersonController {
     }
 
     @RequestMapping(value = "/findperson/deleteok/{id}", method= RequestMethod.GET)
-    public String deleteFindPerson(@PathVariable("id") int id) {
-        if (findPersonService.deleteFindPerson(id) == 0) {
+    public String deleteFindPerson(@PathVariable("id") int id, HttpSession session) {
+        String loginUserid = ((UserVO) session.getAttribute("login")).getUserid();
+        FindPersonVO vo = findPersonService.getFindPerson(id);
+
+        if (loginUserid.equals(vo.getWriter()) && findPersonService.deleteFindPerson(id) == 0) {
             System.out.println("데이터 삭제 실패");
         } else {
             System.out.println("데이터 삭제 성공");

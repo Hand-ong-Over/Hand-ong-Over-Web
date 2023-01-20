@@ -95,9 +95,9 @@
                             <p class="card-text" style="height: 70px; overflow: hidden;">${u.room_type}, ${u.price}만원, ${u.num_of_people}명, 기간 : ${u.start_date} ~ ${u.end_date}</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group" style="border-radius: 3px;">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='findperson/${u.article_id}'" style="background-color: dodgerblue; color: white; border: none">상세보기</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='/findperson/${u.article_id}'" style="background-color: dodgerblue; color: white; border: none">상세보기</button>
                                     <c:if test="${u.writer eq user.userid}">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='findperson/editform/${u.article_id}'" style="border: none;">수정</button>|
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='/findperson/editform/${u.article_id}'" style="border: none;">수정</button>|
                                         <button type="button" class="btn btn-sm btn-outline-secondary" style="color: black; font-weight: 800; border: none;" onClick="javascript:delete_ok('${u.article_id}')">삭제</button>
                                     </c:if>
                                 </div>
