@@ -10,15 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f5e345-a569-45e2-a9df-aebc5f17ab63" name="변경" comment="Fix some error">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/FileUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71e788c4-26b1-4a57-bf6a-e22b3a1e26b1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71e788c4-26b1-4a57-bf6a-e22b3a1e26b1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonFileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/handong/handongover/board/FindPersonFileUpload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addfindperson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addfindperson.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addfindroom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addfindroom.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detailfindperson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detailfindperson.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editfindperson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editfindperson.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listfindperson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listfindperson.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listfindroom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listfindroom.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,7 @@
         <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -66,13 +65,13 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/coding/2022-2/PP1/2022-2-PP1-Project5&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/coding/2022-2/PP1/Hand-ong-Over-Web/Hand-ong-Over&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;아티팩트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
@@ -211,6 +210,25 @@
       <workItem from="1671337434191" duration="1827000" />
       <workItem from="1671339328731" duration="259000" />
       <workItem from="1671345268678" duration="3848000" />
+      <workItem from="1671349275286" duration="17000" />
+      <workItem from="1671349378230" duration="649000" />
+      <workItem from="1671350143380" duration="14000" />
+      <workItem from="1671352031948" duration="232000" />
+      <workItem from="1671369763167" duration="619000" />
+      <workItem from="1671710008259" duration="288000" />
+      <workItem from="1671710435993" duration="908000" />
+      <workItem from="1671711404683" duration="1633000" />
+      <workItem from="1671715408268" duration="832000" />
+      <workItem from="1671780206787" duration="1235000" />
+      <workItem from="1672056276827" duration="10000" />
+      <workItem from="1672406304245" duration="574000" />
+      <workItem from="1672576140959" duration="20000" />
+      <workItem from="1673370585564" duration="6429000" />
+      <workItem from="1673438489609" duration="276000" />
+      <workItem from="1673628107432" duration="2449000" />
+      <workItem from="1673702173916" duration="8279000" />
+      <workItem from="1673784196482" duration="6000" />
+      <workItem from="1674201047262" duration="2818000" />
     </task>
     <task id="LOCAL-00001" summary="Dependencies setting">
       <created>1670518938227</created>
@@ -408,7 +426,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671337954573</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Fix some error">
+      <created>1671349282379</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1671349282379</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fix some error">
+      <created>1671349657522</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1671349657522</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

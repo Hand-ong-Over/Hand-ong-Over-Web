@@ -7,6 +7,8 @@
     <title>EditRoom Give</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/resources/js/FileUpload.js"></script>
 </head>
 <body>
 <header>
@@ -27,14 +29,14 @@
         <br><br><label class="form-label">방 사진</label>
         <c:set var="images" value="${findPersonVO.images.split(';')}" />
 
-        <div id="files">
+        <div id="photos">
             <c:set var="i" value="0" />
             <c:forEach var="image" items="${images}">
                 <br><img src="${pageContext.request.contextPath}/resources/upload/${image}" width="100" height="100">
-                <input type="file" name="imageFile${i}" value="${image}">
+                <input type="file" accept="image/png image/jpeg" id="photo${i}" name="photo${i}" value="${image}">
             </c:forEach>
-            <button type="button" class="btn btn-primary" onclick="addFile()">사진 추가</button>
-            <button type="button" class="btn btn-warning" onclick="removeFile()">사진 삭제</button>
+            <button type="button" class="btn btn-primary" onclick="addPhoto()">사진 추가</button>
+            <button type="button" class="btn btn-warning" onclick="removePhoto()">사진 삭제</button>
         </div>
 
         <br><br><label for="one.address" class="form-label">주소</label>
@@ -102,26 +104,3 @@
 </div>
 </body>
 </html>
-<script>
-    var file_cnt = 0;
-
-    function addFile() {
-        file_cnt = document.getElementsByTagName("input").length;
-        var file = document.createElement("input");
-        file.setAttribute("type", "file");
-        file.setAttribute("name", "imageFile" + file_cnt);
-        file.setAttribute("id", "imageFile" + file_cnt);
-        file.setAttribute("class", "form-control");
-        file.setAttribute("style", "margin-top: 10px");
-        document.getElementById("files").appendChild(file);
-        file_cnt++;
-    }
-
-    function removeFile() {
-        file_cnt = document.getElementsByTagName("input").length;
-        if (file_cnt > 0) {
-            document.getElementById("files").removeChild(document.getElementById("imageFile" + (file_cnt - 1)));
-            file_cnt--;
-        }
-    }
-</script>

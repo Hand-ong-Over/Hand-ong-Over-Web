@@ -6,6 +6,8 @@
     <title>Add Post for find Person</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/resources/js/FileUpload.js"></script>
     <style>
         input{
             width: 450px;
@@ -35,9 +37,10 @@
         <br><label for="title" class="form-label">제목</label>
         <br><input type="text" id="title" name="title"/>
 
-        <br><div id="files" style="margin-top: 10px">
+        <br><div id="photos" style="margin-top: 10px">
             <p class="form-label">방 사진</p>
-            <button type="button" class="btn btn-primary" onclick="addFile()">사진 추가</button>
+            <button type="button" id="add-file-button" class="btn btn-primary" onclick="addPhoto()">사진 추가</button>
+            <button type="button" id="remove-file-button" class="btn btn-warning d-none" onclick="removePhoto()">사진 삭제</button>
         </div>
 
         <br><br><label for="address" class="form-label">주소</label>
@@ -107,26 +110,6 @@
 </div>
 </body>
 </html>
-<script>
-    var file_cnt = 0;
-    function addFile() {
-        var file = document.createElement("input");
-        file.setAttribute("type", "file");
-        file.setAttribute("name", "imageFile" + file_cnt);
-        file.setAttribute("id", "imageFile" + file_cnt);
-        file.setAttribute("class", "form-control");
-        file.setAttribute("style", "margin-top: 10px");
-        document.getElementById("files").appendChild(file);
-        file_cnt++;
-    }
-
-    function removeFile() {
-        if (file_cnt > 0) {
-            document.getElementById("files").removeChild(document.getElementById("imageFile" + (file_cnt - 1)));
-            file_cnt--;
-        }
-    }
-</script>
 <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div
             mapOption = {

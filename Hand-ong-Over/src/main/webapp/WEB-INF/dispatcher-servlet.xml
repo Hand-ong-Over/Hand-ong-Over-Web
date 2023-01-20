@@ -19,6 +19,7 @@
 
     <mvc:resources mapping="/resources/**" location="/resources/" />
     <mvc:resources mapping="/img/**" location="/resources/img/" />
+    <mvc:resources mapping="/js/**" location="/resources/js" />
 
     <bean id="loginCheckInterceptor" class="edu.handong.handongover.user.LoginCheckInterceptor" />
 
