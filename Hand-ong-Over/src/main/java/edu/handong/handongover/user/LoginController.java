@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping(value="/login")
 public class LoginController {
 
     @Autowired
@@ -19,7 +18,7 @@ public class LoginController {
         return "login";
     }
 
-    @RequestMapping(value="/loginOk", method = RequestMethod.POST)
+    @RequestMapping(value="/login/loginOk", method = RequestMethod.POST)
     public String loginCheck(HttpSession session, UserVO vo) {
         String returnURL = "";
         if (session.getAttribute("login") != null) {
@@ -30,10 +29,10 @@ public class LoginController {
         if (loginVO != null) {
             System.out.println("로그인 성공");
             session.setAttribute("login", loginVO);
-            returnURL = "redirect:/";
+            returnURL = "redirect:../";
         } else {
             System.out.println("로그인 실패");
-            returnURL = "redirect:/login/login";
+            returnURL = "redirect:../login";
         }
         return returnURL;
     }
@@ -41,6 +40,6 @@ public class LoginController {
     @RequestMapping(value="/logout")
     public String logout(HttpSession session) {
         session.invalidate();
-        return "redirect:/login/login";
+        return "redirect:login";
     }
 }
