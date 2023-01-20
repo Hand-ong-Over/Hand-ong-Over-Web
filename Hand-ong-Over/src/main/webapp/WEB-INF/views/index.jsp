@@ -9,8 +9,8 @@
   <h1>Hello!! We are Hand-ong Over Developer.</h1>
   <p>If you would like to use our website please click the link below!!! Thank you</p>
   <p>
-    <button type="button" class="btn btn-primary" onclick="location.href='board/findperson'">양도 해요</button>
-    <button type="button" class="btn btn-primary" onclick="location.href='board/findroom'">양도 구해요</button>
+    <button type="button" class="btn btn-primary" onclick="location.href='/findperson'">양도 해요</button>
+    <button type="button" class="btn btn-primary" onclick="location.href='/findroom'">양도 구해요</button>
   </p>
 </div>
 </body>
