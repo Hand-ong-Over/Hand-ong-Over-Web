@@ -14,8 +14,9 @@ public class FindPersonDAO {
     @Autowired
     SqlSession sqlSession;
 
-    public int insertFindPerson(FindPersonVO vo) {
-        return sqlSession.insert("FindPerson.insertFindPerson", vo);
+    public FindPersonVO insertFindPerson(FindPersonVO vo) {
+        sqlSession.insert("FindPerson.insertFindPerson", vo);
+        return vo;
     }
     public int deleteFindPerson(int article_id) {
         return sqlSession.delete("FindPerson.deleteFindPerson", article_id);

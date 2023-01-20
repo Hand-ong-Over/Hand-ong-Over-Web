@@ -14,7 +14,7 @@ public class FindPersonServiceImpl implements FindPersonService {
         this.findPersonDAO = findPersonDAO;
     }
     @Override
-    public int insertFindPerson(FindPersonVO vo) {
+    public FindPersonVO insertFindPerson(FindPersonVO vo) {
         return findPersonDAO.insertFindPerson(vo);
     }
     @Override

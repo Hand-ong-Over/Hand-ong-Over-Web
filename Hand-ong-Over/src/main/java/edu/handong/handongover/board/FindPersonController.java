@@ -42,13 +42,13 @@ public class FindPersonController {
     public String addFindPersonOk(HttpServletRequest request) {
         FindPersonFileUpload fileUpload = new FindPersonFileUpload();
         FindPersonVO vo = fileUpload.uploadPhoto(request);
-
-        if (findPersonService.insertFindPerson(vo) == 0) {
+        FindPersonVO newFindPerson = findPersonService.insertFindPerson(vo);
+        if (newFindPerson == null) {
             System.out.println("데이터 추가 실패");
         } else {
             System.out.println("데이터 추가 성공");
         }
-        return "redirect:/findperson" + vo.getArticle_id();
+        return "redirect:/findperson/" + newFindPerson.getArticle_id();
     }
 
     @RequestMapping(value = "/findperson/editform/{id}", method= RequestMethod.GET)
@@ -73,11 +73,11 @@ public class FindPersonController {
 
         String loginUserid = ((UserVO) session.getAttribute("login")).getUserid();
         if (loginUserid.equals(vo.getWriter()) && findPersonService.updateFindPerson(vo) == 0) {
-                System.out.println("데이터 수정 실패");
+            System.out.println("데이터 수정 실패");
         } else {
             System.out.println("데이터 수정 성공");
         }
-        return "redirect:/findperson" + vo.getArticle_id();
+        return "redirect:/findperson/" + vo.getArticle_id();
     }
 
     @RequestMapping(value = "/findperson/deleteok/{id}", method= RequestMethod.GET)
@@ -90,6 +90,6 @@ public class FindPersonController {
         } else {
             System.out.println("데이터 삭제 성공");
         }
-        return "redirect:/findperson";
+        return "redirect:../../findperson";
     }
 }

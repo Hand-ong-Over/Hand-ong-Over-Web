@@ -7,7 +7,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/resources/js/FileUpload.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/FileUpload.js"></script>
     <style>
         input{
             width: 450px;
@@ -103,8 +103,8 @@
         <br><textarea cols="50" rows="5" id="additional_info" name="additional_info"></textarea>
         <br><br>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-outline-primary me-md-2" type="submit" value="Add">추가</button>
-            <button class="btn btn-outline-secondary" type="button"><a href="" style="text-decoration: none; color: gray">취소</a></button>
+            <button class="btn btn-outline-success me-md-2" type="submit" value="Add">추가</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="history.back()">취소</button>
         </div>
     </form>
 </div>

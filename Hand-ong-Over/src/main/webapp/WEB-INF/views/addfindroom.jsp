@@ -81,7 +81,7 @@
         <br><br>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <button class="btn btn-outline-primary me-md-2" type="submit" value="Add">추가</button>
-            <button class="btn btn-outline-secondary" type="button"><a href="listfindperson.jsp" style="text-decoration: none; color: gray">취소</a></button>
+            <button class="btn btn-outline-secondary" type="button" onclick="history.back()">취소</button>
         </div>
     </form>
 </div>

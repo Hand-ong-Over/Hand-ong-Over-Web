@@ -68,8 +68,8 @@
                 개발자들의 이야기가 궁금하다면 아래의 Github 링크를 클릭해 주세요! <br /> Thank you :)</p>
             <p>
                 <a href="https://github.com/Hand-ong-Over/Hand-ong-Over-Web.git" target="_blank" class="btn btn-outline-primary my-2">github repository 이동</a>
-                <a href="findperson/add" class="btn btn-outline-secondary my-2">글 추가하기</a>
-                <button type="button" class="btn btn-primary" onclick="location.href='../login/logout'">로그아웃</button>
+                <a href="findperson/add" class="btn btn-outline-success my-2">글 추가하기</a>
+                <button type="button" class="btn btn-outline-secondary" onclick="location.href='logout'">로그아웃</button>
             </p>
         </div>
     </div>
@@ -95,10 +95,10 @@
                             <p class="card-text" style="height: 70px; overflow: hidden;">${u.room_type}, ${u.price}만원, ${u.num_of_people}명, 기간 : ${u.start_date} ~ ${u.end_date}</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group" style="border-radius: 3px;">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='/findperson/${u.article_id}'" style="background-color: dodgerblue; color: white; border: none">상세보기</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary" onclick="location.href='findperson/${u.article_id}'">상세보기</button>
                                     <c:if test="${u.writer eq user.userid}">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='/findperson/editform/${u.article_id}'" style="border: none;">수정</button>|
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" style="color: black; font-weight: 800; border: none;" onClick="javascript:delete_ok('${u.article_id}')">삭제</button>
+                                        <button type="button" class="btn btn-sm btn-outline-warning" onclick="location.href='findperson/editform/${u.article_id}'">수정</button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger" onClick="javascript:delete_ok('${u.article_id}')">삭제</button>
                                     </c:if>
                                 </div>
                             </div>

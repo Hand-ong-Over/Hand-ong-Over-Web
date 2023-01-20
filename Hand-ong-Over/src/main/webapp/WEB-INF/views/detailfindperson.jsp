@@ -37,12 +37,12 @@
         <div>
             <c:choose>
                 <c:when test="${findPerson.images == null}">
-                    <img src="https://via.placeholder.com/225.png?text=No+Image" alt="No Image" width="100%" height="225">
+                    <img src="https://via.placeholder.com/225.png?text=No+Image" alt="No Image" width="400" height="300">
                 </c:when>
                 <c:otherwise>
                     <c:set var="images" value="${findPerson.images.split(';')}"/>
                     <c:forEach var="image" items="${images}">
-                        <img src="${pageContext.request.contextPath}/resources/upload/${image}" alt="" width="100%" height="225">
+                        <img src="${pageContext.request.contextPath}/resources/upload/${image}" alt="" width="400" height="300">
                     </c:forEach>
                 </c:otherwise>
             </c:choose>
@@ -122,9 +122,19 @@
         <br><label class="form-label"> - ${findPerson.additional_info}</label>
         <br><br>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-outline-secondary" type="button"><a href="/findperson" style="text-decoration: none; color: gray">확인</a></button>
+            <button class="btn btn-outline-primary" type="button" onclick="location.href='../findperson'">확인</button>
+            <c:if test="${user.userid eq findPerson.writer}">
+                <button class="btn btn-outline-warning" type="button" onclick="location.href='../findperson/editform/${findPerson.article_id}'">수정</button>
+                <button class="btn btn-outline-danger" type="button" onclick="delete_ok(${findPerson.article_id})">삭제</button>
+            </c:if>
         </div>
     </form>
 </div>
 </body>
 </html>
+<script>
+    function delete_ok(id){
+        var is_confirm = confirm("정말로 삭제하겠습니까?");
+        if(is_confirm) location.href='../findperson/deleteok/' + id;
+    }
+</script>
