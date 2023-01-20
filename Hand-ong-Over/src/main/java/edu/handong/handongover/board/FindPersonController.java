@@ -12,34 +12,33 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping("/findperson")
 public class FindPersonController {
 
     @Autowired
     FindPersonServiceImpl findPersonService;
 
     // FindPerson
-    @RequestMapping(value = "/", method= RequestMethod.GET)
+    @RequestMapping(value = "/findperson", method= RequestMethod.GET)
     public String findPersonList(Model model, HttpSession session) {
         model.addAttribute("findPersonList", findPersonService.getFindPersonList());
         model.addAttribute("user", session.getAttribute("login"));
         return "listfindperson";
     }
 
-    @RequestMapping(value = "/{id}", method= RequestMethod.GET)
+    @RequestMapping(value = "/findperson/{id}", method= RequestMethod.GET)
     public String findPersonDetail(@PathVariable int id, Model model, HttpSession session) {
         model.addAttribute("findPerson", findPersonService.getFindPerson(id));
         model.addAttribute("user", session.getAttribute("login"));
         return "detailfindperson";
     }
 
-    @RequestMapping(value = "/add", method= RequestMethod.GET)
+    @RequestMapping(value = "/findperson/add", method= RequestMethod.GET)
     public String addFindPerson(Model model, HttpSession session) {
         model.addAttribute("user", session.getAttribute("login"));
         return "addfindperson";
     }
 
-    @RequestMapping(value = "/addok", method= RequestMethod.POST)
+    @RequestMapping(value = "/findperson/addok", method= RequestMethod.POST)
     public String addFindPersonOk(HttpServletRequest request) {
         FindPersonFileUpload fileUpload = new FindPersonFileUpload();
         FindPersonVO vo = fileUpload.uploadPhoto(request);
@@ -49,7 +48,7 @@ public class FindPersonController {
         } else {
             System.out.println("데이터 추가 성공");
         }
-        return "redirect:/findperson/" + vo.getArticle_id();
+        return "redirect:/findperson" + vo.getArticle_id();
     }
 
     @RequestMapping(value = "/findperson/editform/{id}", method= RequestMethod.GET)
