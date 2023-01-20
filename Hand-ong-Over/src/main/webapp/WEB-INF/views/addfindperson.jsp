@@ -39,8 +39,8 @@
 
         <br><div id="photos" style="margin-top: 10px">
             <p class="form-label">방 사진</p>
-            <button type="button" id="add-file-button" class="btn btn-primary" onclick="addPhoto()">사진 추가</button>
-            <button type="button" id="remove-file-button" class="btn btn-warning d-none" onclick="removePhoto()">사진 삭제</button>
+            <button type="button" id="add-photo-button" class="btn btn-primary" onclick="addPhoto()">사진 추가</button>
+            <button type="button" id="remove-photo-button" class="btn btn-warning d-none" onclick="removePhoto()">사진 삭제</button>
         </div>
 
         <br><br><label for="address" class="form-label">주소</label>

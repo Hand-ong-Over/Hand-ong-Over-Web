@@ -30,13 +30,13 @@
         <c:set var="images" value="${findPersonVO.images.split(';')}" />
 
         <div id="photos">
+            <button type="button" id="add-photo-button" class="btn btn-primary" onclick="addPhoto()">사진 추가</button>
+            <button type="button" id="remove-photo-button" class="btn btn-warning d-none" onclick="removePhoto()">사진 삭제</button>
             <c:set var="i" value="0" />
             <c:forEach var="image" items="${images}">
                 <br><img src="${pageContext.request.contextPath}/resources/upload/${image}" width="100" height="100">
-                <input type="file" accept="image/png image/jpeg" id="photo${i}" name="photo${i}" value="${image}">
+                <input type="file" accept="image/png image/jpeg" id="photo${i}" name="photo${i}" class="form-control photo-upload mt-1" value="${image}">
             </c:forEach>
-            <button type="button" class="btn btn-primary" onclick="addPhoto()">사진 추가</button>
-            <button type="button" class="btn btn-warning" onclick="removePhoto()">사진 삭제</button>
         </div>
 
         <br><br><label for="one.address" class="form-label">주소</label>

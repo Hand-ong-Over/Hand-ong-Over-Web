@@ -1,6 +1,17 @@
-let photo_cnt = $('#photos').children("input").length;
+let photo_cnt = 0;
+$(function () {
+    photo_cnt = $('#photos').children("input").length - 1;
+
+    console.log($('#photos').children("img").length);
+    if ($('#photos').children("img").length > 0) {
+        $('#remove-photo-button').removeClass('d-none');
+    }
+
+    console.log(photo_cnt);
+});
 
 function addPhoto() {
+    console.log(photo_cnt);
     let photo = $("<input>");
     photo.attr("type", "file");
     photo.attr("accept", "image/png, image/jpeg");
@@ -13,12 +24,16 @@ function addPhoto() {
 }
 
 function removePhoto() {
-    if (photo_cnt > 0) {
+    console.log(photo_cnt);
+    if (photo_cnt === 0) {
+        $('#photos').children("input:last").val('');
+        $('#photos').children("img:last").remove();
+    } else if (photo_cnt > 0) {
         $('#photos').children("input:last").remove();
         $('#photos').children("img:last").remove();
         photo_cnt--;
-    }
-    if (photo_cnt === 0) {
-        $('#remove-photo-button').addClass('d-none');
+        if (photo_cnt === 0) {
+            $('#remove-photo-button').addClass('d-none');
+        }
     }
 }
