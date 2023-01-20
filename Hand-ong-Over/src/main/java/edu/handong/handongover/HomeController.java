@@ -11,7 +11,8 @@ import javax.servlet.http.HttpSession;
 public class HomeController {
     // Home
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String home(Model model) {
+    public String home(Model model, HttpSession session) {
+        model.addAttribute("user", session.getAttribute("login"));
         return "index";
     }
 }
